@@ -159,12 +159,11 @@ true -> 1
 false -> 0
 string '' -> 0
 string 'hola' -> NaN
-*/
+
 
 //Convertir a Booleano
 console.log(Boolean("Hola")); //true
-
-​/*
+​
 TABLA CONVERSIÓN BOOLEANOS
 undefined -> false
 null -> false
@@ -175,7 +174,44 @@ NaN -> false
 ' ' -> true
 */
 
+//Operaciones
+resp = a +  b; //suma
+resp = a -  b; // resta
+resp = a /  b; // division
+resp = a %  b; // mod
+resp = a *  b; //producto
+resp = a **  b; //potencia
 
+//Funciones
+function sumar(a, b){
+    return a + b;
+}
+console.log(sumar(4, 5));
 
+//Haga un algoritmo que dado un nombre y un apellido los salude
 
+function saludo(nombre, apellido){
+    return `Hola, ${nombre} ${apellido}`;
+}
+console.log(saludo('Jose', 'Ortega'));
 
+//Haga una funcion que dado un numero lo eleve al cuadrado
+function elevar(numero){
+    return numero **2;
+}
+console.log(elevar(9));
+
+//Haga una funcion que tome el valor de un producto, le aplique el 20% de descuento,
+// imprima el valor del producto incial
+//el valor con descuento y el valor ahorrado
+
+function valor_descuento (v_producto){
+    let desc = v_producto * 0.2;
+    let v_final = v_producto - desc;
+
+    return ` Valor inicial: ${v_producto},
+    \n Valor del descuento: ${desc},
+    \n Valor Final ${v_final}`;
+}
+
+console.log(valor_descuento(100));
