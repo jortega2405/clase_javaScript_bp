@@ -120,3 +120,62 @@ console.log(edad);
 
 let edad_dos;
 console.log(edad_dos);
+
+//Operador typof o funcion typeod(x), devuelve el tipo de dato de una variable
+
+console.log(typeof undefined); //udefined
+console.log(typeof 0); //number
+console.log(typeof 0.5); //number
+console.log(typeof "Hola"); //String
+console.log(typeof NaN); //number
+console.log(typeof Infinity); //number
+console.log(typeof null); //object ERROR DE JS
+
+
+// Conversiones de tipo de dato
+//Existen dos tipos de conversiones: Explicita e implicita
+
+//Convertir a string
+valor = true;
+valor = String(valor); //"true"
+console.log(valor);
+
+//Convertir a numero
+//Conversiones numericas en js ocurren automaticamente en funciones
+//matematicas y expresiones
+
+console.log(typeof('6'/'2'));//number
+console.log(typeof(1+'2'));//string
+
+valor = "123";
+valor = Number(valor);
+console.log(Number("Hola")); //NaN
+
+/*
+TABLA CONVERSIÓN NÚMEROS
+undefined -> NaN
+null -> 0
+true -> 1
+false -> 0
+string '' -> 0
+string 'hola' -> NaN
+*/
+
+//Convertir a Booleano
+console.log(Boolean("Hola")); //true
+
+​/*
+TABLA CONVERSIÓN BOOLEANOS
+undefined -> false
+null -> false
+string '' -> false
+NaN -> false
+0 -> false
+'0' -> true
+' ' -> true
+*/
+
+
+
+
+
